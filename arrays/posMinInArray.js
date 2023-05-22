@@ -1,5 +1,3 @@
-// Write an algorithm which receives an array of integers and prints the position of its minimum.
-
 //import generateIntegerArray and sort
 const {generateIntegerArray} = require('./generateIntegerArray');
 const {sort} = require('./sort');
@@ -8,14 +6,22 @@ const {sort} = require('./sort');
 let tab = generateIntegerArray(10,5);
 let copyTab =[];
 
-for(let i=0;i<tab.length;i++){
+for (let i = 0; i < tab.length; i++) {
     copyTab.push(tab[i]);
 }
-console.log(copyTab);
+console.log("The generated array : ", copyTab);
 
 //sort array
 sort(tab);
-console.log(tab);
-min =tab[0];
-let i=0;
-while(min !                                                                                                                                                                                                                                                                                                                                                                                                                                             =copyTab(0))
+console.log("the sorted array : ", tab);
+
+let min = tab[0];
+let position = 0;
+for (let i = 0; i < copyTab.length; i++) {
+    if (copyTab[i] == min) {
+        position = i;
+        break;
+    }
+    //console.log("loop ", i)
+}         
+console.log("The position of the minimum is", position, ", it's the", (position + 1), "element of the array.");
