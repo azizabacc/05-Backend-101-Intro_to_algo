@@ -1,7 +1,7 @@
 // Write an algorithm which receives an array of integers and prints its maximum.
 
 
-//import generateIntegerArray
+//import generateIntegerArray and sort
 const {generateIntegerArray} = require('./generateIntegerArray');
 const {sort} = require('./sort');
 
