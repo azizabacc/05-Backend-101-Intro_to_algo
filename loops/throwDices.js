@@ -5,7 +5,7 @@ const {getRandomInt} = require('./getRandomInt');
 function throwDices(a){
     let dicesValues= []; 
     let n = getRandomInt(a);
-    console.log("nombre de jet : ",n);
+    console.log("number of throws : ",n);
     for(let i=1;i<=n;i++){
        dicesValues.push(getRandomInt(6));
     }
